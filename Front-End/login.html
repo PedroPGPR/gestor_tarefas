@@ -1,0 +1,46 @@
+<main>
+    <div class="row d-flex flex-wrap flex-row gap-5">
+        <div class="col-12 bg-light rounded shadow p-3">
+            <h2 class="text-center text-primary fw-bold">Gestor de Tarefas</h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center bg-light rounded shadow">
+            <div class="col-7 border-4 border-end border-primary d-flex justify-content-center align-items-center">
+                <img src="images/login.png" alt="Login" id="img_login">
+            </div>
+            <div class="col-5 p-5 d-none">
+                <h5 class="text-center">Seja Bem-Vindo</h2>
+                <hr>
+                <form action="login.php" method="post">
+                    <input type="text" name="usuario" class="form-control m-3" placeholder="Usuário">
+                    <input type="password" name="pass" class="form-control m-3" placeholder="Senha">
+                    <div class="col-12 ms-3 d-flex justify-content-center">
+                        <div class="col-6 text-end pe-1">
+                            <input type="submit" value="Login" class="form-control btn btn-outline-primary w-50">
+                        </div>
+                        <div class="col-6 text-start ps-1">
+                            <a href="#"><button class="form-control btn btn-outline-primary w-50">Registar</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5 p-2">
+                <h5 class="text-start ps-4">Seja Bem-Vindo</h2>
+                <hr class="w-50 ms-3">
+                <form action="registo.php" method="post">
+                    <input type="text" name="usuario" class="form-control m-3" placeholder="Usuário">
+                    <input type="text" name="nome" class="form-control m-3" placeholder="Primeiro Nome">
+                    <input type="text" name="apelido" class="form-control m-3" placeholder="Último Nome">
+                    <input type="password" name="pass" class="form-control m-3" placeholder="Senha">
+                    <div class="col-12 ms-3 d-flex justify-content-center">
+                        <div class="col-6 text-end pe-1">
+                            <input type="submit" value="Registar" class="form-control btn btn-outline-primary w-50">
+                        </div>
+                        <div class="col-6 text-start ps-1">
+                            <a href="#"><button class="form-control btn btn-outline-primary w-50">Login</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>    
