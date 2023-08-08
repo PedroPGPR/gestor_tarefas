@@ -50,3 +50,39 @@ main.div{
     filter: grayscale(1);
     width: 25px;
 }
+
+/* Formulário de edição de status tarefa */
+input[type="checkbox"]#flexCheckDefault:checked + label {
+    color: rgb(0, 228, 0);
+    font-weight: bold;
+}
+
+input[type="checkbox"]#inlineCheckbox:checked + label {
+    color: rgb(0, 228, 0);
+    font-weight: bold;
+}
+
+.form-check-input[type=checkbox] {
+    border: 2px solid rgb(0, 228, 0);
+    border-radius: 50%;
+}
+
+.form-check-input:checked {
+    background-color: rgb(0, 228, 0);
+    border: 2px solid rgb(0, 228, 0);
+}
+
+.form-check-input{
+    border-color: none;
+}
+
+.atribuicoes, #inlineCheckbox, .detalhes{
+    font-size: 15px !important;
+}
+
+.form-select{
+    background-color: lightgrey;
+}
+
+
+/* Fim da edição de status de tarefa */
