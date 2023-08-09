@@ -84,10 +84,10 @@ input[type="checkbox"]#inlineCheckbox:checked + label {
     background-color: lightgrey;
 }
 
-.data{
+.data {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
     border: none;
-    padding: 0.25rem 0px 0.25rem 0.5rem;   
-    border: 0.5px solid #0d6efd;
 }
-
 /* Fim da edição de status de tarefa */
