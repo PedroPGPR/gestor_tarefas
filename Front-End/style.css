@@ -88,6 +88,21 @@ input[type="checkbox"]#inlineCheckbox:checked + label {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     padding-left: 0.5rem;
+}
+
+#notas{
+    width: 80%;
+    height: 150px;
+    display: block;
+    margin: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    font-size: 14px;
     border: none;
 }
+
+.form-control:focus {
+    border-color: #3B71CA;
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.075), 0 0 12px #3B71CA;
+  }
 /* Fim da edição de status de tarefa */

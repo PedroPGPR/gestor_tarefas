@@ -73,8 +73,8 @@
                     <form action="" method="post">
                         <div class="col-12">
                             <div class="col-12 form-check">
-                                <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
+                                <input class="form-control form-check-input" type="checkbox" value="true" id="flexCheckDefault">
+                                <label class="form-check-label ms-2" for="flexCheckDefault">
                                     Titulo da Tarefa
                                 </label>
                             </div>
@@ -82,23 +82,23 @@
                             <div class="col-12 d-flex flex-wrap flex-row gap-2">
                                 <label for="inlineCheckbox" class="me-3">Atribuida a: </label>
                                 <div class="form-check form-check-inline d-flex align-items-center gap-2 m-0">
-                                    <input class="form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="1">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="1">
                                     <label class="form-check-label atribuicoes" for="inlineCheckbox">Pedro Rodrigues</label>
                                 </div>
                                 <div class="form-check form-check-inline d-flex align-items-center gap-2">
-                                    <input class="form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="2">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="2">
                                     <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa B</label>
                                 </div>
                                 <div class="form-check form-check-inline d-flex align-items-center gap-2">
-                                    <input class="form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="3">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="3">
                                     <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa C</label>
                                 </div>
                                 <div class="form-check form-check-inline d-flex align-items-center gap-2">
-                                    <input class="form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="4">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="4">
                                     <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa D</label>
                                 </div>
                                 <div class="form-check form-check-inline d-flex align-items-center gap-2">
-                                    <input class="form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="5">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="5">
                                     <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa E</label>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                             <div class="col-12 d-flex flex-wrap flex-row justify-content-evenly gap-2 mt-3 mb-4">
                                 <div class="col-3">
                                     <label for="grupo" class="detalhes fw-bold">Grupo:</label>
-                                    <select class="form-select form-select-sm detalhes mt-1" aria-label="Small select example">
+                                    <select class="form-control form-select form-select-sm detalhes mt-1" aria-label="Small select example">
                                         <option class="detalhes" selected>Escolha um Grupo</option>
                                         <option class="detalhes" value="1">One</option>
                                         <option class="detalhes" value="2">Two</option>
@@ -114,8 +114,8 @@
                                     </select>
                                 </div>
                                 <div class="col-3">
-                                    <label for="grupo" class="detalhes fw-bold">Prioridade:</label>
-                                    <select class="form-select form-select-sm detalhes mt-1" aria-label="Small select example">
+                                    <label for="prioridade" class="detalhes fw-bold">Prioridade:</label>
+                                    <select class="form-control form-select form-select-sm detalhes mt-1" aria-label="Small select example">
                                         <option class="detalhes" value="Urgente">Urgente</option>
                                         <option class="detalhes" value="Muito Urgente">Muito Urgente</option>
                                         <option class="detalhes" value="Normal" selected>Normal</option>
@@ -124,24 +124,54 @@
                                     </select>
                                 </div>
                                 <div class="col-3">
-                                    <label for="grupo" class="detalhes fw-bold">Progresso:</label>
-                                    <select class="form-select form-select-sm detalhes mt-1" aria-label="Small select example">
+                                    <label for="progresso" class="detalhes fw-bold">Progresso:</label>
+                                    <select class="form-control form-select form-select-sm detalhes mt-1" aria-label="Small select example">
                                         <option class="detalhes" value="Não Iniciado" selected>Não Iniciado</option>
                                         <option class="detalhes" value="Pendente">Pendente</option>
                                         <option class="detalhes" value="Concluida">Concluida</option>
                                     </select>
                                 </div>
                                 <div class="col-3">
-                                    <label for="grupo" class="detalhes fw-bold">Data Inicio:</label>
-                                    <input type="date" name="data_inicio" class="data detalhes w-100 mt-1 rounded">
+                                    <label for="data_inicio" class="detalhes fw-bold focus-ring focus-ring-primary">Data Inicio:</label>
+                                    <input type="date" name="data_inicio" class="form-control data detalhes w-100 mt-1 rounded">
                                 </div>
                                 <div class="col-3">
-                                    <label for="grupo" class="detalhes fw-bold">Data Fim:</label>
-                                    <input type="date" name="data_inicio" class="data detalhes w-100 mt-1 rounded">
+                                    <label for="data_fim" class="detalhes fw-bold focus-ring">Data Fim:</label>
+                                    <input type="date" name="data_fim" class="form-control data detalhes w-100 mt-1 rounded">
                                 </div>
                             </div>
                         </div>
                         <hr>
+                        <div class="col-12 mb-4">
+                            <label for="grupo" class="me-3 d-block">Notas:</label>
+                            <textarea name="notas" cols="30" rows="10" placeholder="Adicionar notas relevantes à tarefa" class="form-control rounded" id="notas"></textarea>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <label for="sub_tarefas" class="me-3 mb-3 d-block">Sub-Tarefas:</label>
+                            <div class="col-12 d-flex flex-wrap flex-column gap-2">
+                                <div class="form-check form-check-inline d-flex align-items-center gap-2 m-0">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="1">
+                                    <label class="form-check-label atribuicoes" for="inlineCheckbox">Pedro Rodrigues</label>
+                                </div>
+                                <div class="form-check form-check-inline d-flex align-items-center gap-2">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="2">
+                                    <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa B</label>
+                                </div>
+                                <div class="form-check form-check-inline d-flex align-items-center gap-2">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="3">
+                                    <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa C</label>
+                                </div>
+                                <div class="form-check form-check-inline d-flex align-items-center gap-2">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="4">
+                                    <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa D</label>
+                                </div>
+                                <div class="form-check form-check-inline d-flex align-items-center gap-2">
+                                    <input class="form-control form-check-input mb-1" type="checkbox" id="inlineCheckbox" value="5">
+                                    <label class="form-check-label atribuicoes" for="inlineCheckbox">Pessoa E</label>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
